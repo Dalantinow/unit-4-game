@@ -32,8 +32,8 @@ for (var i = 0; i < numberOptions.length; i++) {
     var imageCrystal = $("<img>");
     imageCrystal.addClass("crystal-image");
     imageCrystal.attr("src", "assets/images/bluecrystal.jpg");
-    
-// unsure how to call different image files for each crystal
+
+    // unsure how to call different image files for each crystal
 
     imageCrystal.attr("data-crystalvalue", numberOptions[i]);
     $("#crystals").append(imageCrystal);
@@ -55,12 +55,10 @@ $(".crystal-image").on("click", function () {
         newgame();
         newone();
         newtwo();
-       
-        
         $("#guess-total").text(targetNumber);
         $("#user-guess").text(counter);
 
-// Can't get the crystal values to reset along with counter and target number
+        // Can't get the crystal values to reset along with counter and target number
 
         console.log(numberOptions[0])
         console.log(numberOptions[1])
@@ -78,7 +76,7 @@ $(".crystal-image").on("click", function () {
         newtwo();
         $("#guess-total").text(targetNumber);
         $("#user-guess").text(counter);
-        
+
 
         console.log(numberOptions[0])
         console.log(numberOptions[1])
